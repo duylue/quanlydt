@@ -24,17 +24,18 @@ public class Controller {
 
     public void them() {
         Scanner scanner = new Scanner(System.in);
+        Scanner scanner1 = new Scanner(System.in);
         SmartPhone smartPhone = new SmartPhone();
         System.out.println("Nhap ten");
         smartPhone.setName(scanner.nextLine());
         System.out.println("Nhap id");
-        smartPhone.setId(scanner.nextInt());
+        smartPhone.setId(scanner1.nextInt());
         System.out.println("Nhap loai");
         smartPhone.setLoai(scanner.nextLine());
         System.out.println("Nhap hang");
         smartPhone.setTenHang(scanner.nextLine());
         System.out.println("Nhap hang");
-        smartPhone.setPrice(scanner.nextLong());
+        smartPhone.setPrice(scanner1.nextLong());
 
         phoneService.them(smartPhone);
 
